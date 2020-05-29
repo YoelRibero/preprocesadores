@@ -93,3 +93,54 @@ Para el proyecto **PlatziGames** tenemos una guía en la que definimos:
 - Uso de ID’s y clases.
 
 [Guía de código](https://static.platzi.com/media/public/uploads/guia-de-codigo-platzi-games_f19c63bf-af70-4aeb-8ac1-3e905bc140ab.pdf)
+
+### PUG
+
+_Pug es un generador de templates implementado con Javascript que nos permite escribir un pseudocódigo limpio y fácil de leer que será compilado a HTML._
+
+Las **variables** no vienen de forma nativa en HTML pero con PUG podemos usarlas. En ellas almacenamos datos y los reutilizarlos en todo nuestro archivo HTML evitándonos tener que escribir lo mismo una y otra vez. Lo mejor es declararla antes de comenzar el documento HTML.
+
+Se declaran de la siguiente manera:
+
+- `-var foo = "value"`
+
+Las utilizamos:
+
+- `element= foo`
+- `h2= titulo`
+
+Otra forma de utilizarla
+
+- `h2 #{titulo}`
+
+También podemos declarar arreglos como variables, con `[]`, los llamos con el nombre de la variable y la posición donde se encuentra el valor que queremos mostrar `#{titulos[1]}`
+
+Un **condicional** nos permite evaluar cierta condición y bifurcar entre dos caminos dependiendo de si se cumple o no.
+
+Un **loop** es un fragmento de código que va a ejecutar de forma repetitiva hasta que cumpla una condición.
+
+**Mixins:** Su finalidad es ofrecer una funcionalidad que pueda ser reutilizada en otras clases pero que no está pensada para usarse de forma autónoma. Nos permite crear bloques reusables de código que cambian su resultado dependiendo del parámetro que enviemos.
+
+Con los mixin logramos escribir menos código, produciendo un código más claro, más expresivo y sobre todo más fácil de mantener.
+
+_Pug funciona como un generador de plantillas, dos de sus principales características para lograrlo son Includes y Extends._
+
+Los **includes** sirven para incluir un archivo de extensión `*.pug` dentro de otro.
+
+Los **extends** te permiten adicionar bloques de código a una página.
+
+### Less
+
+_Less es un preprocesador para CSS que nos permite trabajar hojas de estilo con funcionalidades de un lenguaje de programación._
+
+En las **variables** almacenamos datos que se puede reutilizar en todas nuestras hojas de estilos. Así evitamos tener que escribir lo mismo una y otra vez cuando se realiza algún cambio, ya que sólo vamos a modificar el valor de la variable y se aplicará a todos los lugares donde sea usada.
+
+Comúnmente almacenamos en variables las guías de estilo de nuestro sitio, como pueden ser los colores y fuentes.
+
+La diferencia entre mixins y **funciones** es que las funciones por general hacen cálculos y regresan un resultado que es usado como valor de alguna propiedad.
+
+Las **funciones** en Less ya están **prediseñadas**.
+
+**Mixins:** Su finalidad es ofrecer una funcionalidad que pueda ser reutilizada en otras clases pero que no está pensada para usarse de forma autónoma. Nos permite crear bloques reusables de código que cambian su resultado dependiendo del parámetro que enviemos.
+
+Con los mixins logramos escribir menos código, produciendo un código más claro, más expresivo y sobre todo más fácil de mantener.
