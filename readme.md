@@ -144,3 +144,29 @@ Las **funciones** en Less ya están **prediseñadas**.
 **Mixins:** Su finalidad es ofrecer una funcionalidad que pueda ser reutilizada en otras clases pero que no está pensada para usarse de forma autónoma. Nos permite crear bloques reusables de código que cambian su resultado dependiendo del parámetro que enviemos.
 
 Con los mixins logramos escribir menos código, produciendo un código más claro, más expresivo y sobre todo más fácil de mantener.
+
+### Sass
+
+_Sass (Syntactically Awesome StyleSheets) es una extensión de CSS que añade características muy potentes y elegantes a este lenguaje de estilos._
+
+Sass es basado en Ruby a diferencia de Less y Stylus que se basan en Javascript.
+
+Las **variables** en Sass las declaramos con `$foo = value;` y las llamamos con `color: $foo;`.
+
+**Import** nos permite escribir código modular separando en diferentes archivos para después importarlos todos en uno solo y tener una base código mucho más ordenada.
+
+**Extends** sirve para insertar los estilos de un selector en otro.
+
+**Mixins** Su finalidad es ofrecer una funcionalidad que pueda ser reutilizada en otras clases pero que no está pensada para usarse de forma autónoma. Nos permite crear bloques reusables de código que cambian su resultado dependiendo del parámetro que enviemos.
+
+Con los mixin logramos escribir menos código, produciendo un código más claro, más expresivo y sobre todo más fácil de mantener.
+
+Declaramos el mixin con `@mixin name {}` y lo llamamos con `@include name;`.
+
+La diferencia entre mixins y **funciones** es que las funciones por general hacen cálculos y regresan un resultado que es usado como valor de alguna propiedad.
+
+La declaramos con `@function name(param1, param2, etc) { @return code }`. Las llamamos con `color: name(param, param2)`.
+
+Un **condicional** nos permite evaluar cierta condición y bifurcar entre dos caminos dependiendo de si se cumple o no.
+
+Un **loop** es un fragmento de código que va a ejecutar de forma repetitiva hasta que cumpla una condición.
