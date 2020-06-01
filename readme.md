@@ -170,3 +170,19 @@ La declaramos con `@function name(param1, param2, etc) { @return code }`. Las ll
 Un **condicional** nos permite evaluar cierta condición y bifurcar entre dos caminos dependiendo de si se cumple o no.
 
 Un **loop** es un fragmento de código que va a ejecutar de forma repetitiva hasta que cumpla una condición.
+
+### Stylus
+
+_Es el preprocesador CSS más reciente de los tres. Fue creado por TJ Holowaychuk (ex programador de Node.js) y escrito en JADE y Node.js._
+
+Las **variables** las declaramos con `foo = value` y la llamamos con `color: foo`.
+
+Los **mixins** los declaramos con `foo()` simplemente con eso creamos un mixin. Lo llamamos `foo()`.
+
+Declaramos una **función** con `foo(param1, param2, etc)` y lo llamamos con `color: foo(param1, param2)`.
+
+Creamos un **loop** con `for foo in count`. Para un **condicional** usamos `if condicion`.
+
+# Proyecto final
+
+_Vamos a integrar todas nuestras páginas en un proyecto final llamado **PlatziGames**._
